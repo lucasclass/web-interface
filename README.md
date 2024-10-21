@@ -1,88 +1,63 @@
-# Free Tailwind landing page template
+# Dicas Pro - Armazene e Compartilhe Suas Dicas Favoritas!
 
-![Simple TailwindCSS template preview](https://github.com/cruip/tailwind-landing-page-template/assets/2683512/f9a98fab-a1bc-4fb5-8572-4de0b6bd932a)
+Bem-vindo ao **Dicas Pro**! Este é um projeto criado para ajudar usuários a armazenar, compartilhar e explorar dicas incríveis sobre os mais variados temas, como sites úteis, jogos divertidos e receitas culinárias. O objetivo é centralizar todas essas sugestões em um único espaço, facilitando o acesso e a organização.
 
-**Simple Light** is a free landing page template built on top of **TailwindCSS** and fully coded in **React** / **Next.js**. Simple light is designed to provide all the basic components a developer need to create a landing page for SaaS products, online services, and more.
-Use it for whatever you want, and be sure to reach us out on X if you build anything cool/useful with it.
-Created and maintained with ❤️ by [Cruip.com](https://cruip.com/).
+## 🎯 Objetivo do Projeto
 
-_Version 1.3.3 built with Tailwind CSS and React + Vite is available [here](https://github.com/cruip/tailwind-landing-page-template/releases/tag/1.3.3)._
+O **Dicas Pro** permite que os usuários:
 
-## Live demo
+- Armazenem e organizem suas dicas favoritas.
+- Compartilhem sugestões com outros usuários.
+- Explorem novas dicas em diferentes categorias, como tecnologia, entretenimento e gastronomia.
+- Façam login e gerenciem suas próprias coleções de dicas.
 
-Check the live demo here 👉️ [https://simple.cruip.com/](https://simple.cruip.com/)
+## 🚀 Tecnologias Utilizadas
 
-## Simple Pro
+- **Next.js** - Framework para renderização do lado do servidor e construção de interfaces dinâmicas.
+- **React** - Biblioteca para construção de interfaces.
+- **Tailwind CSS** - Framework CSS para estilização rápida e responsiva.
+- **React-hook-form** - Gerenciamento de formulário.
+- **Typescript** - Tipagem estática para robustez do código.
+  
+## 🛠️ Instalação
 
-[![Simple Pro](https://github.com/cruip/tailwind-landing-page-template/assets/2683512/992be2ba-3de7-4838-be41-12e85686c193)](https://cruip.com/)
+Siga as etapas abaixo para instalar e rodar o projeto localmente:
 
-## Design files
+### Pré-requisitos
 
-If you need the design files, you can download them from Figma's Community 👉 https://bit.ly/3HOZMpf
+- **Node.js** versão 16.x ou superior.
+- **npm** ou **yarn** como gerenciador de pacotes.
 
-## Usage
+### Passo a Passo
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+1. Clone o repositório:
+   ```bash
 
-### Getting Started
+   git clone https://github.com/seu-usuario/dicas-pro.git
 
-First, run the development server:
+2. Acesse o diretório do projeto:
+   ```bash
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+   cd web-interface
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Instale as dependências necessárias: Se estiver usando npm:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```bash
+   npm install
+   ```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+   Ou, se preferir Yarn
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+   ```bash
+   yarn install
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Rode o projeto em ambiente de desenvolvimento: Se estiver usando npm:
 
-### Learn More
+   ```bash
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+   Ou, se preferir Yarn
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-### Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-### Support notes
-
-This template has been developed with the App Router (`app`) and React Server Components. If you’re unfamiliar with these beta features, you can find more information about them on the Next.js beta documentation page. So, please note that any request dealing with React (e.g. extra features, customisations, et cetera) is to be considered out of the support scope.
-
-For more information about what support covers, please see our (FAQs)[https://cruip.com/faq/].
-
-## Credits
-
-- [Nucleo](https://nucleoapp.com/)
-
-## Terms and License
-
-- Released under the [GPL](https://www.gnu.org/licenses/gpl-3.0.html).
-- Copyright 2024 [Cruip](https://cruip.com/).
-- Use it for personal and commercial projects, but please don’t republish, redistribute, or resell the template.
-- Attribution is not required, although it is really appreciated.
-
-## About Us
-
-We're an Italian developer/designer duo creating high-quality design/code resources for developers, makers, and startups.
-
-## Stay in the loop
-
-If you would like to know when we release new resources, you can follow [@pacovitiello](https://x.com/pacovitiello) and [@DavidePacilio](https://x.com/DavidePacilio) on X, or you can subscribe to our [newsletter](https://cruip.com/newsletter/).
-
+   ```bash
+   yarn dev

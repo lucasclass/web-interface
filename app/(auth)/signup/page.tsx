@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Sign Up - Simple",
+  title: "Cadastre-se",
   description: "Page description",
 };
 
@@ -7,7 +7,9 @@ export default function SignUp() {
   return (
     <>
       <div className="mb-10">
-        <h1 className="text-4xl font-bold">Create your account</h1>
+        <h1 className="text-4xl font-bold">
+          Cadastre-se gratuitamente e tenha acesso imediato ao nosso sistema
+        </h1>
       </div>
 
       {/* Form */}
@@ -18,13 +20,13 @@ export default function SignUp() {
               className="mb-1 block text-sm font-medium text-gray-700"
               htmlFor="name"
             >
-              Full name
+              Nome Completo
             </label>
             <input
               id="name"
               className="form-input w-full py-2"
               type="text"
-              placeholder="Corey Barker"
+              placeholder="John Doe"
               required
             />
           </div>
@@ -48,13 +50,13 @@ export default function SignUp() {
               className="mb-1 block text-sm font-medium text-gray-700"
               htmlFor="phone"
             >
-              Phone
+              Celular
             </label>
             <input
               id="phone"
               className="form-input w-full py-2"
               type="text"
-              placeholder="(+750) 932-8907"
+              placeholder="(+55) 21 99999 9999"
               required
             />
           </div>
@@ -63,7 +65,7 @@ export default function SignUp() {
               className="mb-1 block text-sm font-medium text-gray-700"
               htmlFor="password"
             >
-              Password
+              Senha
             </label>
             <input
               id="password"
@@ -77,11 +79,7 @@ export default function SignUp() {
         </div>
         <div className="mt-6 space-y-3">
           <button className="btn w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%]">
-            Register
-          </button>
-          <div className="text-center text-sm italic text-gray-400">Or</div>
-          <button className="btn w-full bg-gradient-to-t from-gray-900 to-gray-700 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%]">
-            Continue with GitHub
+            Criar minha conta
           </button>
         </div>
       </form>
@@ -89,19 +87,19 @@ export default function SignUp() {
       {/* Bottom link */}
       <div className="mt-6 text-center">
         <p className="text-sm text-gray-500">
-          By signing up, you agree to the{" "}
+          Ao se inscrever, você concorda com os{" "}
           <a
             className="whitespace-nowrap font-medium text-gray-700 underline hover:no-underline"
             href="#0"
           >
-            Terms of Service
+            Termos de serviço
           </a>{" "}
-          and{" "}
+          e a{" "}
           <a
             className="whitespace-nowrap font-medium text-gray-700 underline hover:no-underline"
             href="#0"
           >
-            Privacy Policy
+            Política de Privacidade
           </a>
           .
         </p>
