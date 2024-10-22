@@ -1,3 +1,5 @@
+import Form from "@/components/form/form";
+
 export const metadata = {
   title: "Cadastre-se",
   description: "Page description",
@@ -13,77 +15,7 @@ export default function SignUp() {
       </div>
 
       {/* Form */}
-      <form>
-        <div className="space-y-4">
-          <div>
-            <label
-              className="mb-1 block text-sm font-medium text-gray-700"
-              htmlFor="name"
-            >
-              Nome Completo
-            </label>
-            <input
-              id="name"
-              className="form-input w-full py-2"
-              type="text"
-              placeholder="John Doe"
-              required
-            />
-          </div>
-          <div>
-            <label
-              className="mb-1 block text-sm font-medium text-gray-700"
-              htmlFor="email"
-            >
-              Email
-            </label>
-            <input
-              id="email"
-              className="form-input w-full py-2"
-              type="email"
-              placeholder="corybarker@email.com"
-              required
-            />
-          </div>
-          <div>
-            <label
-              className="mb-1 block text-sm font-medium text-gray-700"
-              htmlFor="phone"
-            >
-              Celular
-            </label>
-            <input
-              id="phone"
-              className="form-input w-full py-2"
-              type="text"
-              placeholder="(+55) 21 99999 9999"
-              required
-            />
-          </div>
-          <div>
-            <label
-              className="mb-1 block text-sm font-medium text-gray-700"
-              htmlFor="password"
-            >
-              Senha
-            </label>
-            <input
-              id="password"
-              className="form-input w-full py-2"
-              type="password"
-              autoComplete="on"
-              placeholder="••••••••"
-              required
-            />
-          </div>
-        </div>
-        <div className="mt-6 space-y-3">
-          <button className="btn w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%]">
-            Criar minha conta
-          </button>
-        </div>
-      </form>
-
+      <Form />
       {/* Bottom link */}
       <div className="mt-6 text-center">
         <p className="text-sm text-gray-500">

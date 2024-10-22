@@ -1,19 +1,11 @@
 "use client";
-import { useForm } from "react-hook-form";
+import { useCep } from "./useCep";
 
-export default function form() {
-  const {
-    handleSubmit,
-    register,
-    formState: { errors },
-  } = useForm();
-
-  const handleFormSubmit = (data: any) => {
-    console.log(data);
-  };
+export default function Form() {
+  const { errors, handleFormSubmit, handleSubmit, register } = useCep();
 
   return (
-    <form>
+    <form onSubmit={handleSubmit(handleFormSubmit)}>
       <div className="space-y-4">
         <div>
           <label
@@ -27,8 +19,11 @@ export default function form() {
             className="form-input w-full py-2"
             type="text"
             placeholder="John Doe"
-            required
+            {...register("address.name")}
           />
+          {errors.address?.name?.message && (
+            <p className="text-red-700">{errors.address?.name?.message}</p>
+          )}
         </div>
         <div>
           <label
@@ -42,10 +37,12 @@ export default function form() {
             className="form-input w-full py-2"
             type="text"
             placeholder="CEP"
-            required
-            {...register("zipCode")}
+            {...register("address.zipCode")}
             maxLength={9}
           />
+          {errors.address?.zipCode?.message && (
+            <p className="text-red-700">{errors.address?.zipCode?.message}</p>
+          )}
         </div>
         <div>
           <label
@@ -59,9 +56,11 @@ export default function form() {
             className="form-input w-full py-2"
             type="text"
             placeholder="Rua"
-            required
-            {...register("street")}
+            {...register("address.street")}
           />
+          {errors.address?.street?.message && (
+            <p className="text-red-700">{errors.address?.street?.message}</p>
+          )}
         </div>
         <div>
           <label
@@ -75,9 +74,30 @@ export default function form() {
             className="form-input w-full py-2"
             type="text"
             placeholder="Bairro"
-            required
-            {...register("district")}
+            {...register("address.district")}
           />
+          {errors.address?.district?.message && (
+            <p className="text-red-700">{errors.address?.district?.message}</p>
+          )}
+        </div>
+        <div>
+          <label
+            className="mb-1 block text-sm font-medium text-gray-700"
+            htmlFor="name"
+          >
+            Número
+          </label>
+          <input
+            id="numero"
+            className="form-input w-full py-2"
+            type="text"
+            placeholder="Número"
+            {...register("address.number")}
+            minLength={1}
+          />
+          {errors.address?.number?.message && (
+            <p className="text-red-700">{errors.address?.number?.message}</p>
+          )}
         </div>
         <div>
           <label
@@ -91,9 +111,13 @@ export default function form() {
             className="form-input w-full py-2"
             type="text"
             placeholder="Complemento"
-            required
-            {...register("complment")}
+            {...register("address.complement")}
           />
+          {errors.address?.complement?.message && (
+            <p className="text-red-700">
+              {errors.address?.complement?.message}
+            </p>
+          )}
         </div>
         <div>
           <label
@@ -107,9 +131,11 @@ export default function form() {
             className="form-input w-full py-2"
             type="text"
             placeholder="Cidade"
-            required
-            {...register("city")}
+            {...register("address.city")}
           />
+          {errors.address?.city?.message && (
+            <p className="text-red-700">{errors.address?.city?.message}</p>
+          )}
         </div>
         <div>
           <label
@@ -123,9 +149,11 @@ export default function form() {
             className="form-input w-full py-2"
             type="text"
             placeholder="Estado"
-            required
-            {...register("state")}
+            {...register("address.state")}
           />
+          {errors.address?.state?.message && (
+            <p className="text-red-700">{errors.address?.state?.message}</p>
+          )}
         </div>
         <div>
           <label
@@ -138,9 +166,12 @@ export default function form() {
             id="email"
             className="form-input w-full py-2"
             type="email"
-            placeholder="corybarker@email.com"
-            required
+            placeholder="johndoe@email.com"
+            {...register("address.mail")}
           />
+          {errors.address?.mail?.message && (
+            <p className="text-red-700">{errors.address?.mail?.message}</p>
+          )}
         </div>
         <div>
           <label
@@ -154,8 +185,11 @@ export default function form() {
             className="form-input w-full py-2"
             type="text"
             placeholder="(+55) 21 99999 9999"
-            required
+            {...register("address.phone")}
           />
+          {errors.address?.phone?.message && (
+            <p className="text-red-700">{errors.address?.phone?.message}</p>
+          )}
         </div>
         <div>
           <label
@@ -170,8 +204,11 @@ export default function form() {
             type="password"
             autoComplete="on"
             placeholder="••••••••"
-            required
+            {...register("address.password")}
           />
+          {errors.address?.password?.message && (
+            <p className="text-red-700">{errors.address?.password?.message}</p>
+          )}
         </div>
       </div>
       <div className="mt-6 space-y-3">
